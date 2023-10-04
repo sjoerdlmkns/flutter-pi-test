@@ -26,7 +26,7 @@ jobs:
         run: flutter pub global activate flutterpi_tool
 
       - name: Build for Raspberry Pi
-        run: flutter pub global run flutterpi_tool build --release --target lib/main.dart --output build
+        run: flutter pub global run flutterpi_tool build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
